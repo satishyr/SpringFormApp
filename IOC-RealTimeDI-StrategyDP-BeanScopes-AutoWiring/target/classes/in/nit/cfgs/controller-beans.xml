@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+ <bean id="stDTO"  class="in.nit.dto.StudentDTO" scope="prototype"/>
+  <bean id="stVO"  class="in.nit.vo.StudentVO"  scope="prototype"/>
+ 
+ <!-- Controller cfg -->
+    <bean id="controller" class="in.nit.controller.StudentController" autowire="constructor"/>
+  
+
+</beans>
